@@ -1,0 +1,18 @@
+package likeLionSpring.likeLionSpring;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class LikeLionSpringApplication {
+
+	public static void main(String[] args) {
+		Lombok lombok = new Lombok();
+		lombok.setData("string");
+		String data = lombok.getData();
+		System.out.println("hello = " + data);
+
+		SpringApplication.run(LikeLionSpringApplication.class, args);
+	}
+
+}
